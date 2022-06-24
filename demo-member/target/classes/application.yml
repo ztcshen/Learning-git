@@ -1,0 +1,24 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: demo-member #项目名
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/bookstoredb?allowPublicKeyRetrieval=true&useSSL=false
+    username: root
+    password: ztc8563156
+mybatis:  
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.thy.pojo
+eureka:
+  client: 
+    enabled: true #该客户端是否可用
+    service-url: 
+      defaultZone: http://localhost:8761/eureka #注册中心地址
+    register-with-eureka: true #注册该服务，默认为true
+    fetch-registry: true #获取服务列表，默认为true
+feign:
+  hystrix:
+    enabled: true #是否开启断路器
+    
