@@ -22,6 +22,7 @@ public class URLTest {
         String line;
         //每次读取一行的数据输出，实际上输出的是一个HTML页面，也就是说服务器响应的是一个静态HTML页面的代码
         //该页面进过浏览器渲染，我们就能看到熟悉的“百度一下”的界面
+        // test git
         while ((line = br.readLine()) != null) {
             System.out.println(line);
         }
