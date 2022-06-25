@@ -24,6 +24,9 @@ public class RestTemplateController {
         // git23423423
         //
         // /w awe
+        //******
+        //我新加的测试行
+        //********
         return restTemplate.getForObject("http://localhost:8090/order/queryUser?userId=12",
                 String.class);
 
