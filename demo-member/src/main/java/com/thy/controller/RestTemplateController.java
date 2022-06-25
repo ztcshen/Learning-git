@@ -18,6 +18,10 @@ public class RestTemplateController {
     @GetMapping(value = "rest-get", produces = "text/html;charset=utf-8")
     public String restTemplateGet() {
         //post请求是的方法是postForObject,第二个参数是返回值类型
+        // test git
+        // git23423423
+        //
+        // /w awe
         return restTemplate.getForObject("http://localhost:8090/order/queryUser?userId=12",
                 String.class);
 
